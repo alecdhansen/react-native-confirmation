@@ -1,4 +1,57 @@
 # react-native-confirmation
+<h2>Installation</h2>
+<li>NPM: npm i react-native-confirmation</li>
+<li>Yarn: yarn add react-native-confirmation</li>
+
+<h2>Usage Example</h2>
+
+import {
+  Dimensions,
+  KeyboardAvoidingView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
+
+```
+import ConfirmationModal from "react-native-confirmation";
+import { useState } from "react";
+
+const App = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [input, setInput] = useState<string>("");
+  const [text, setText] = useState<string>("");
+  
+  const clearText = () => {
+    setText("");
+  };
+
+  return (
+    <>
+      <Button onPress={() => setIsVisible(true)} />
+      <Text>{text}</Text>
+      <TextInput
+          onChangeText={(text) => setInput(text)}
+          onSubmitEditing={() => setText(input)}
+          value={input}
+          style={styles.input}
+          placeholder="Message"
+      />
+      <ConfirmationModal
+        isVisible={isVisible}
+        setIsVisible={setIsVisible}
+        onConfirm={clearText}
+        message="Are you sure you want to clear the text?"
+      />
+    </>
+  );
+};
+
+export default TabOneScreen;
+```
+
 
 ![Simulator Screenshot - iPhone 13 mini - 2023-05-31 at 21 45 50](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/a1c41d1c-5ebb-4900-9c82-1fd15971bb68)
 ![Simulator Screenshot - iPhone 13 mini - 2023-05-31 at 21 45 31](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/452e3dab-d108-4547-a311-2c03e44e5ec5)
