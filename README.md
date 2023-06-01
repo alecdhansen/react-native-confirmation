@@ -9,7 +9,7 @@
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
 
-<h4>Version 1.0.1</h4>
+<h4>Version 1.0.3</h4>
 <h2>Installation</h2>
 <li>NPM: npm i react-native-confirmation</li>
 <li>Yarn: yarn add react-native-confirmation</li>
