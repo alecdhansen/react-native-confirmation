@@ -9,7 +9,7 @@
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
 
-<h4>Version 1.0.3</h4>
+<h4>Version 1.0.4</h4>
 <h2>Installation</h2>
 <li>NPM: npm i react-native-confirmation</li>
 <li>Yarn: yarn add react-native-confirmation</li>
@@ -18,6 +18,7 @@
 
 ```
 import ConfirmationModal from "react-native-confirmation";
+import { Button, TextInput, Text } from "react-native"
 import { useState } from "react";
 
 const App = () => {
@@ -32,14 +33,13 @@ const App = () => {
   return (
     <>
       <Button onPress={() => setIsVisible(true)} />
-      <Text>{text}</Text>
       <TextInput
           onChangeText={(text) => setInput(text)}
           onSubmitEditing={() => setText(input)}
           value={input}
-          style={styles.input}
           placeholder="Message"
       />
+      <Text>{text}</Text>
       <ConfirmationModal
         isVisible={isVisible}
         setIsVisible={setIsVisible}
@@ -50,7 +50,7 @@ const App = () => {
   );
 };
 
-export default TabOneScreen;
+export default App;
 ```
 
 <h2>Examples</h2>
