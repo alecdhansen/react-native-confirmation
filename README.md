@@ -62,8 +62,19 @@ https://github.com/alecdhansen/react-native-confirmation/assets/25291098/4770c1e
 
 <h2>Props</h2>
 <ul>
-<li><strong>isVisible</strong> - <em>bool</em> - boolean state of the confirmation modal <em>default: false</em></li> 
+<li><strong>isVisible</strong> - <em>bool</em> - Boolean state of the confirmation modal <em>default: false</em></li> 
 <li><strong>setIsVisible</strong> - <em>isVisible: bool => void</em></li> 
-<li><strong>onConfirm</strong> - <em>any</em> - pass in any function you'd like to run on confirm press</li> 
-<li><strong>message</strong> - <em>string</em> - message to display to users before asking them to "confirm" or "cancel"</li> 
+<li><strong>onConfirm</strong> - <em>any</em> - Pass in any function you'd like to run on confirm press</li> 
+<li><strong>message</strong> - <em>string</em> - Message to display to users before asking them to "confirm" or "cancel"</li> 
+<li><strong>confirmText?</strong> - <em>string</em> - Optional prop to swap "Confirm" text</li> 
+<li><strong>cancelText?</strong> - <em>string</em> - Optional prop to swap "Cancel" text</li> 
 </ul>
+
+| Prop           | Type                      | Description                                                             | Default |
+| -------------- | ------------------------- | ----------------------------------------------------------------------- | ------- |
+| _isVisible_    | _bool_                    | Boolean state of the confirmation modal                                 | false   |
+| _setIsVisible_ | _isVisible: bool => void_ |                                                                         |         |
+| _onConfirm_    | _any_                     | Pass in any function you'd like to run on confirm press                 |         |
+| _message_      | _string_                  | Message to display to users before asking them to "confirm" or "cancel" |         |
+| _confirmText?_ | _string_                  | Optional prop to swap "Confirm" text                                    |         |
+| _cancelText?_  | _string_                  | Optional prop to swap "Cancel" text                                     |         |
