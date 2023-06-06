@@ -3,4 +3,6 @@ export type ConfirmationModalProps = {
   setIsVisible: (isVisible: boolean) => void;
   onConfirm: any;
   message: string;
+  confirmText?: string;
+  cancelText?: string;
 };

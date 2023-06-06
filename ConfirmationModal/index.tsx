@@ -8,6 +8,8 @@ const ConfirmationModal = ({
   setIsVisible,
   onConfirm,
   message,
+  confirmText,
+  cancelText,
 }: ConfirmationModalProps) => {
   const [slideAnimation] = useState<Animated.Value>(new Animated.Value(0));
 
@@ -57,7 +59,7 @@ const ConfirmationModal = ({
             <Text style={styles.areYouSureText}>{message}</Text>
             <View style={styles.divider} />
             <TouchableOpacity activeOpacity={1} onPress={handleConfirm}>
-              <Text style={styles.deleteText}>Confirm</Text>
+              <Text style={styles.confirmText}>{confirmText || "Confirm"}</Text>
             </TouchableOpacity>
           </View>
           <TouchableOpacity
@@ -65,7 +67,7 @@ const ConfirmationModal = ({
             activeOpacity={1}
             style={styles.cancelContainer}
           >
-            <Text style={styles.cancelText}>Cancel</Text>
+            <Text style={styles.cancelText}>{cancelText || "Cancel"}</Text>
           </TouchableOpacity>
         </Animated.View>
       </View>

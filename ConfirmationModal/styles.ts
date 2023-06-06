@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   divider: { borderWidth: 0.5, borderColor: "#aba5a5" },
-  deleteText: {
+  confirmText: {
     textAlign: "center",
     color: "#ff2e2e",
     fontWeight: "bold",
