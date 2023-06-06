@@ -55,8 +55,9 @@ export default App;
 
 <h2>Examples</h2>
 
-![Simulator Screenshot - iPhone 14 Pro Max - 2023-06-06 at 14 47 24](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/23b9703c-dbfb-4134-8ff8-93bc625f9679)
-![Simulator Screenshot - iPhone 14 Pro Max - 2023-06-06 at 14 44 46](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/806dbc1a-f98c-4030-811e-c5fb89273c40)
+
+![Simulator Screenshot - iPhone 14 Pro Max - 2023-06-06 at 14 44 46](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/793483e3-77e7-47ba-9696-e2a72b773070)
+![Simulator Screenshot - iPhone 14 Pro Max - 2023-06-06 at 14 47 24](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/6534100d-31ce-491a-9f7b-7fb0ea8bb7e5)
 
 
 <h4>Video Example</h4>
