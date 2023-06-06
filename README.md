@@ -17,9 +17,9 @@
 <h2>Usage Example</h2>
 
 ```
-import ConfirmationModal from "react-native-confirmation";
-import { Button, TextInput, Text } from "react-native"
 import { useState } from "react";
+import { Button, TextInput, Text } from "react-native"
+import ConfirmationModal from "react-native-confirmation";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -28,13 +28,14 @@ const App = () => {
 
   const clearText = () => {
     setText("");
+    console.log("Text cleared!")
   };
 
   return (
     <>
       <Button onPress={() => setIsVisible(true)} />
       <TextInput
-          onChangeText={(text) => setInput(text)}
+          onChangeText={setInput}
           onSubmitEditing={() => setText(input)}
           value={input}
           placeholder="Message"
@@ -61,14 +62,6 @@ export default App;
 https://github.com/alecdhansen/react-native-confirmation/assets/25291098/4770c1ef-2736-40ad-8b55-b4e51b791cff
 
 <h2>Props</h2>
-<ul>
-<li><strong>isVisible</strong> - <em>bool</em> - Boolean state of the confirmation modal <em>default: false</em></li> 
-<li><strong>setIsVisible</strong> - <em>isVisible: bool => void</em></li> 
-<li><strong>onConfirm</strong> - <em>any</em> - Pass in any function you'd like to run on confirm press</li> 
-<li><strong>message</strong> - <em>string</em> - Message to display to users before asking them to "confirm" or "cancel"</li> 
-<li><strong>confirmText?</strong> - <em>string</em> - Optional prop to swap "Confirm" text</li> 
-<li><strong>cancelText?</strong> - <em>string</em> - Optional prop to swap "Cancel" text</li> 
-</ul>
 
 | Prop           | Type                      | Description                                                             | Default |
 | -------------- | ------------------------- | ----------------------------------------------------------------------- | ------- |
@@ -78,3 +71,5 @@ https://github.com/alecdhansen/react-native-confirmation/assets/25291098/4770c1e
 | _message_      | _string_                  | Message to display to users before asking them to "confirm" or "cancel" |         |
 | _confirmText?_ | _string_                  | Optional prop to swap "Confirm" text                                    |         |
 | _cancelText?_  | _string_                  | Optional prop to swap "Cancel" text                                     |         |
+
+<!-- https://www.tablesgenerator.com/markdown_tables# -->
