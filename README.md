@@ -9,7 +9,6 @@
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
 
-<h4>Version 1.0.7</h4>
 <h2>Installation</h2>
 <li>NPM: npm i react-native-confirmation</li>
 <li>Yarn: yarn add react-native-confirmation</li>
@@ -59,6 +58,7 @@ export default App;
 ![Simulator Screenshot - iPhone 13 mini - 2023-05-31 at 21 45 50](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/a1c41d1c-5ebb-4900-9c82-1fd15971bb68)
 ![Simulator Screenshot - iPhone 13 mini - 2023-05-31 at 21 45 31](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/452e3dab-d108-4547-a311-2c03e44e5ec5)
 
+<h4>Video Example</h4>
 https://github.com/alecdhansen/react-native-confirmation/assets/25291098/4770c1ef-2736-40ad-8b55-b4e51b791cff
 
 <h2>Props</h2>
