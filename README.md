@@ -55,10 +55,8 @@ export default App;
 
 <h2>Examples</h2>
 
-
 ![Simulator Screenshot - iPhone 14 Pro Max - 2023-06-06 at 14 44 46](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/793483e3-77e7-47ba-9696-e2a72b773070)
 ![Simulator Screenshot - iPhone 14 Pro Max - 2023-06-06 at 14 47 24](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/6534100d-31ce-491a-9f7b-7fb0ea8bb7e5)
-
 
 <h4>Video Example</h4>
 https://github.com/alecdhansen/react-native-confirmation/assets/25291098/4770c1ef-2736-40ad-8b55-b4e51b791cff
@@ -69,7 +67,7 @@ https://github.com/alecdhansen/react-native-confirmation/assets/25291098/4770c1e
 | -------------- | ------------------------- | ----------------------------------------------------------------------- | ------- |
 | _isVisible_    | _bool_                    | Boolean state of the confirmation modal                                 | false   |
 | _setIsVisible_ | _isVisible: bool => void_ |                                                                         |         |
-| _onConfirm_    | _any_                     | Pass in any function you'd like to run on confirm press                 |         |
+| _onConfirm_    | _() => void_              | Pass in any function you'd like to run on confirm press                 |         |
 | _message_      | _string_                  | Message to display to users before asking them to "confirm" or "cancel" |         |
 | _confirmText?_ | _string_                  | Optional prop to swap "Confirm" text                                    |         |
 | _cancelText?_  | _string_                  | Optional prop to swap "Cancel" text                                     |         |
