@@ -51,22 +51,22 @@ const ConfirmationModal = ({
       animationType="fade"
       visible={isVisible}
       transparent
-      onRequestClose={() => setIsVisible(false)}
-    >
+      onRequestClose={() => setIsVisible(false)}>
       <View style={styles.modal}>
         <Animated.View style={animatedStyle}>
           <View style={styles.topModalContainer}>
             <Text style={styles.areYouSureText}>{message}</Text>
             <View style={styles.divider} />
-            <TouchableOpacity activeOpacity={1} onPress={handleConfirm}>
+            <TouchableOpacity
+              activeOpacity={0.5}
+              onPress={handleConfirm}>
               <Text style={styles.confirmText}>{confirmText || "Confirm"}</Text>
             </TouchableOpacity>
           </View>
           <TouchableOpacity
             onPress={() => setIsVisible(false)}
-            activeOpacity={1}
-            style={styles.cancelContainer}
-          >
+            activeOpacity={0.7}
+            style={styles.cancelContainer}>
             <Text style={styles.cancelText}>{cancelText || "Cancel"}</Text>
           </TouchableOpacity>
         </Animated.View>
