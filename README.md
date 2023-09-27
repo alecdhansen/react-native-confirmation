@@ -11,9 +11,13 @@
 
 <h2>Installation</h2>
 <h3>NPM</h3>
-```npm i react-native-confirmation```
+```
+npm i react-native-confirmation
+```
 <h3>Yarn</h3>
-```yarn add react-native-confirmation```
+```
+yarn add react-native-confirmation
+```
 
 <h2>Usage Example</h2>
 
