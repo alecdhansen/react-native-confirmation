@@ -10,8 +10,10 @@
 ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
 
 <h2>Installation</h2>
-<li>NPM: npm i react-native-confirmation</li>
-<li>Yarn: yarn add react-native-confirmation</li>
+<h3>NPM</h3>
+```npm i react-native-confirmation```
+<h3>Yarn</h3>
+```yarn add react-native-confirmation```
 
 <h2>Usage Example</h2>
 
@@ -21,9 +23,9 @@ import { Button, TextInput, Text } from "react-native"
 import ConfirmationModal from "react-native-confirmation";
 
 const App = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-  const [input, setInput] = useState<string>("");
-  const [text, setText] = useState<string>("");
+  const [isVisible, setIsVisible] = useState(false);
+  const [input, setInput] = useState("");
+  const [text, setText] = useState("");
 
   const clearText = () => {
     setText("");
@@ -63,13 +65,17 @@ https://github.com/alecdhansen/react-native-confirmation/assets/25291098/4770c1e
 
 <h2>Props</h2>
 
-| Prop           | Type                      | Description                                                             | Default |
-| -------------- | ------------------------- | ----------------------------------------------------------------------- | ------- |
-| _isVisible_    | _bool_                    | Boolean state of the confirmation modal                                 | false   |
-| _setIsVisible_ | _isVisible: bool => void_ |                                                                         |         |
-| _onConfirm_    | _() => void_              | Pass in any function you'd like to run on confirm press                 |         |
-| _message_      | _string_                  | Message to display to users before asking them to "confirm" or "cancel" |         |
-| _confirmText?_ | _string_                  | Optional prop to swap "Confirm" text                                    |         |
-| _cancelText?_  | _string_                  | Optional prop to swap "Cancel" text                                     |         |
+| **Prop**                      | **Type**                  | **Description**                                                         | **Default** |
+| ----------------------------- | ------------------------- | ----------------------------------------------------------------------- | ----------- |
+| _isVisible_                   | _bool_                    | Boolean state of the confirmation modal                                 | false       |
+| _setIsVisible_                | _isVisible: bool => void_ |                                                                         |             |
+| _onConfirm_                   | _() => void_              | Pass in any function you'd like to run on confirm press                 |             |
+| _message_                     | _string_                  | Message to display to users before asking them to "confirm" or "cancel" |             |
+| _confirmText?_                | _string_                  | Custom "confirm" text                                                   | "Confirm"   |
+| _confirmTextColor?_           | _string_                  | Custom "confirm" text color                                             | "#ff2e2e"   |
+| _cancelText?_                 | _string_                  | Custom "cancel" text                                                    | "Cancel"    |
+| _cancelTextColor?_            | _string_                  | Custom "cancel" text color                                              | "#5193ef"   |
+| _confirmButtonActiveOpacity?_ | _number_                  | Confirm button press opacity (value between 0 and 1)                    | 0.5         |
+| _cancelButtonActiveOpacity?_  | _number_                  | Cancel button press opacity (value between 0 and 1)                     | 0.7         |
 
 <!-- https://www.tablesgenerator.com/markdown_tables# -->
