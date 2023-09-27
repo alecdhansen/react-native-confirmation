@@ -4,5 +4,9 @@ export type ConfirmationModalProps = {
   onConfirm: any;
   message: string;
   confirmText?: string;
+  confirmTextColor?: string;
   cancelText?: string;
+  cancelTextColor?: string;
+  confirmButtonActiveOpacity?: number;
+  cancelButtonActiveOpacity?: number;
 };

@@ -20,7 +20,6 @@ export const styles = StyleSheet.create({
   divider: { borderWidth: 0.5, borderColor: "#aba5a5" },
   confirmText: {
     textAlign: "center",
-    color: "#ff2e2e",
     fontWeight: "bold",
     paddingVertical: 20,
     fontSize: 20,
@@ -34,7 +33,6 @@ export const styles = StyleSheet.create({
   },
   cancelText: {
     textAlign: "center",
-    color: "#5193ef",
     fontWeight: "bold",
     paddingVertical: 20,
     fontSize: 20,
