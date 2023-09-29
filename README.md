@@ -63,8 +63,11 @@ export default App;
 
 <h2>Examples</h2>
 
-![Simulator Screenshot - iPhone 14 Pro Max - 2023-06-06 at 14 44 46](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/793483e3-77e7-47ba-9696-e2a72b773070)
-![Simulator Screenshot - iPhone 14 Pro Max - 2023-06-06 at 14 47 24](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/6534100d-31ce-491a-9f7b-7fb0ea8bb7e5)
+![Simulator Screenshot - iPhone 13 mini - 2023-09-29 at 00 53 46](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/7fc14867-8b15-4787-a0c2-ffe4e13533a3)
+![Simulator Screenshot - iPhone 13 mini - 2023-09-29 at 00 55 32](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/05d6f382-9caf-4e8b-bd8f-36472d709490)
+![Simulator Screenshot - iPhone 13 mini - 2023-09-29 at 00 57 08](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/e526ef81-1013-4de6-9654-20ad07d7454e)
+![Simulator Screenshot - iPhone 13 mini - 2023-09-29 at 00 58 23](https://github.com/alecdhansen/react-native-confirmation/assets/25291098/c2041c19-d648-40fa-964d-ef08d91d33d3)
+
 
 <h4>Video Example</h4>
 https://github.com/alecdhansen/react-native-confirmation/assets/25291098/4770c1ef-2736-40ad-8b55-b4e51b791cff
