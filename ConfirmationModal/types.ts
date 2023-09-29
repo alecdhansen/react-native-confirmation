@@ -1,4 +1,4 @@
-export type ConfirmationModalProps = {
+export interface ConfirmationModalProps {
   isVisible: boolean;
   setIsVisible: (isVisible: boolean) => void;
   onConfirm: any;
@@ -7,6 +7,4 @@ export type ConfirmationModalProps = {
   confirmTextColor?: string;
   cancelText?: string;
   cancelTextColor?: string;
-  confirmButtonActiveOpacity?: number;
-  cancelButtonActiveOpacity?: number;
 };

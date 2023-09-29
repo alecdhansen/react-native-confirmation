@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, Modal, TouchableOpacity, Animated } from "react-native";
+import { View, Text, Modal, Animated, Pressable } from "react-native";
 import { styles } from "./styles";
 import { ConfirmationModalProps } from "./types";
 
@@ -12,8 +12,6 @@ const ConfirmationModal = ({
   cancelText,
   confirmTextColor,
   cancelTextColor,
-  confirmButtonActiveOpacity,
-  cancelButtonActiveOpacity,
 }: ConfirmationModalProps) => {
   const [slideAnimation] = useState<Animated.Value>(new Animated.Value(0));
 
@@ -61,18 +59,27 @@ const ConfirmationModal = ({
           <View style={styles.topModalContainer}>
             <Text style={styles.areYouSureText}>{message}</Text>
             <View style={styles.divider} />
-            <TouchableOpacity
-              activeOpacity={confirmButtonActiveOpacity || 0.5}
+            <Pressable
+              style={({ pressed }) => [
+                {
+                  backgroundColor: pressed ? "rgb(53, 53, 57)" : "rgb(30,	30,	32)",
+                },
+                styles.confirmContainer,
+              ]}
               onPress={handleConfirm}>
-              <Text style={[styles.confirmText, { color: confirmTextColor || "#ff2e2e" }]}>{confirmText || "Confirm"}</Text>
-            </TouchableOpacity>
+              <Text style={[styles.confirmText, { color: confirmTextColor || "rgb(247,	43,	44)" }]}>{confirmText || "Confirm"}</Text>
+            </Pressable>
           </View>
-          <TouchableOpacity
+          <Pressable
             onPress={() => setIsVisible(false)}
-            activeOpacity={cancelButtonActiveOpacity || 0.7}
-            style={styles.cancelContainer}>
-            <Text style={[styles.cancelText, { color: cancelTextColor || "#5193ef", }]}>{cancelText || "Cancel"}</Text>
-          </TouchableOpacity>
+            style={({ pressed }) => [
+              {
+                backgroundColor: pressed ? "rgb(53, 53, 57)" : "rgb(36,	36,	38)",
+              },
+              styles.cancelContainer,
+            ]}>
+            <Text style={[styles.cancelText, { color: cancelTextColor || "rgb(56,	124,	254)", }]}>{cancelText || "Cancel"}</Text>
+          </Pressable>
         </Animated.View>
       </View>
     </Modal>
