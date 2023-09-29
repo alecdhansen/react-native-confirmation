@@ -73,18 +73,18 @@ https://github.com/alecdhansen/react-native-confirmation/assets/25291098/4770c1e
 
 <h2>Props</h2>
 
-| **Prop**                  | **Type**                        | **Description**                                                                        | **Default**         |
-| ------------------------- | ------------------------------- | -------------------------------------------------------------------------------------- | ------------------- |
-| _isVisible_               | _bool_                          | Boolean state of the confirmation modal                                                | false               |
-| _setIsVisible_            | _isVisible: bool => void_       |                                                                                        |                     |
-| _onConfirm_               | _any_                           | Pass in any function you'd like to run onConfirm press                                 |                     |
-| _secondaryOnConfirm?_     | _any_                           | Pass a second function as another option you'd like to run on secondaryOnConfirm press |                     |
-| _secondaryOnConfirmText?_ | _string_                        | Custom secondary "confirm" text                                                        | "Delete"            |
-| _message?_                | _string_                        | Optional message to display to users before asking them to "Confirm" or "Cancel"       |                     |
-| _onConfirmText?_          | _string_                        | Custom "confirm" text                                                                  | "Confirm"           |
-| _onConfirmTextColor?_     | _string_                        | Custom "confirm" text color                                                            | "rgb(227, 43, 44)"  |
-| _cancelText?_             | _string_                        | Custom "cancel" text                                                                   | "Cancel"            |
-| _cancelTextColor?_        | _string_                        | Custom "cancel" text color                                                             | "rgb(56, 124, 254)" |
-| _colorScheme?_            | _"system" \| "light" \| "dark"_ | Colors scheme of the confirmation modal component                                      | "system"            |
+| **Prop**                  | **Type**                        | **Description**                                                                  | **Default**                                                                            |
+| ------------------------- | ------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --- |
+| _isVisible_               | _bool_                          | Boolean state of the confirmation modal                                          | false                                                                                  |
+| _setIsVisible_            | _isVisible: bool => void_       |                                                                                  |                                                                                        |
+| _onConfirm_               | \_() => void                    | Promise<void>\_                                                                  | Pass in any function you'd like to run onConfirm press                                 |     |
+| _secondaryOnConfirm?_     | \_() => void                    | Promise<void>\_                                                                  | Pass a second function as another option you'd like to run on secondaryOnConfirm press |     |
+| _secondaryOnConfirmText?_ | _string_                        | Custom secondary "confirm" text                                                  | "Delete"                                                                               |
+| _message?_                | _string_                        | Optional message to display to users before asking them to "Confirm" or "Cancel" |                                                                                        |
+| _onConfirmText?_          | _string_                        | Custom "confirm" text                                                            | "Confirm"                                                                              |
+| _onConfirmTextColor?_     | _string_                        | Custom "confirm" text color                                                      | "rgb(227, 43, 44)"                                                                     |
+| _cancelText?_             | _string_                        | Custom "cancel" text                                                             | "Cancel"                                                                               |
+| _cancelTextColor?_        | _string_                        | Custom "cancel" text color                                                       | "rgb(56, 124, 254)"                                                                    |
+| _colorScheme?_            | _"system" \| "light" \| "dark"_ | Color scheme of the confirmation modal component                                 | "system"                                                                               |
 
 <!-- https://www.tablesgenerator.com/markdown_tables# -->

@@ -1,6 +1,6 @@
 {
   "name": "react-native-confirmation",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "React Native confirmation modal for confirming or canceling a user action",
   "main": "ConfirmationModal/index.tsx",
   "scripts": {

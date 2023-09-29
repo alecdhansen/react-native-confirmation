@@ -1,8 +1,8 @@
 export interface ConfirmationModalProps {
   isVisible: boolean;
   setIsVisible: (isVisible: boolean) => void;
-  onConfirm: any;
-  secondaryOnConfirm?: any;
+  onConfirm: () => void | Promise<void>;
+  secondaryOnConfirm?: () => void | Promise<void>;
   secondaryOnConfirmText?: string;
   message?: string;
   onConfirmText?: string;
