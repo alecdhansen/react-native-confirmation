@@ -1,5 +1,5 @@
-import React, { useEffect, useState, Appearance } from "react";
-import { View, Text, Modal, Animated, Pressable } from "react-native";
+import React, { useEffect, useState } from "react";
+import { View, Text, Modal, Animated, Pressable, Appearance } from "react-native";
 import { styles } from "./styles";
 import { ConfirmationModalProps } from "./types";
 
